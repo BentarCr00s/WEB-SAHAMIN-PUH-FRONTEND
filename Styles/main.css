@@ -16,19 +16,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid;
+    /* border: 1px solid; */
     /* position: fixed; */
 }
 .header-logo-area a{
     text-decoration: none;
     color: #0F6153;
 }
-/* .header-logo{
-    background-color: aqua;
-    border: 1px solid;
-    padding: 0;
-    margin: 0;
-} */
 .header-logo-link{
     display: flex;
     justify-content: left;
@@ -63,8 +57,8 @@ header{
     text-decoration: none;
 }
 .header-menu > li > a:hover{
-    background-color: #1a8f7b;
-    color: #fff;
+    background-color: #ddf3f0;
+    /* color: #fff; */
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -78,7 +72,7 @@ main{
 
 }
 .main-container{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 86%;
     margin: 0 auto;
     justify-content: center;
@@ -107,52 +101,13 @@ main{
     text-decoration: none;
     color: black;
 }
-/* .news {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-.berita {
-    display: flex;
-    gap: 20px;
-}
-.berita img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.berita-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.tanggal-berita {
-    font-size: 14px;
-    color: #888;
-}
-.read-more-btn {
-    align-self: flex-end;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #0F6153;
-    color: #fff;
-    text-decoration: none;
-}
-.read-more-btn:hover {
-    background-color: #1a8f7b;
-} */
-.news {
+.news{
     display: flex;
     /* flex-direction: column; */
     gap: 40px;
     justify-content: space-between;
     padding: 20px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
     text-align: justify;
 }
@@ -169,33 +124,29 @@ main{
     padding: 10px;
 }
 .berita:hover{
-    background-color: #d4d4d4;
+    background-color: #ddf3f0;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
 }
-
-.berita img {
+.berita img{
     width: 100%;
     max-width: 100%;
-    height: auto;
+    width: auto;
     border-radius: 8px;
 }
-
-.berita-details {
+.berita-details{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
-.tanggal-berita {
+.tanggal-berita{
     font-size: 14px;
     color: #000000;
 }
-
-/* .read-more-btn {
+/* .read-more-btn{
     align-self: flex-end;
     padding: 5px 10px;
     border-radius: 5px;
@@ -203,8 +154,7 @@ main{
     color: #fff;
     text-decoration: none;
 }
-
-.read-more-btn:hover {
+.read-more-btn:hover{
     background-color: #1a8f7b;
 } */
 
@@ -214,13 +164,65 @@ main{
     text-decoration: none;
     color: black;
 }
+.kalkulator{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+.card-kalkulator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    padding: 10px;
+}
+.card-kalkulator:hover{
+    background-color: #ddf3f0;
+}
+.preview img{
+    max-width: 100%;
+    /* max-height: 100%; */
+    width: auto;
+    /* height: 50%; */
+    border-radius: 8px;
+}
+.deskripsi p{
+    text-align: justify;
+    margin: 0;
+}
+.cta-btn button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    /* color: #fff; */
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.cta-btn button:hover{
+    background-color: #c6e0dd;
+}
+
 
 /* styling footer */
 footer{
-    width: 100%;
+    background-color: #f8f9fa; 
+    padding: 20px 0;
 }
 .footer-container{
-    border: 1px solid;
-    width: 86%;
-    margin: 0 auto;
+    max-width: 86%; 
+    margin: 0 auto; 
+    /* display: flex; */
+    justify-content: space-between; 
+    align-items: center;
+}
+.copyright-container{
+    margin: 10px 0;
+}
+.copyright-container p{
+    /* border: 1px solid; */
+    color: #464646;
+    margin: 0;
+    text-align: center;
 }
