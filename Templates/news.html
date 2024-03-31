@@ -7,7 +7,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script type="text/javascript" src="../Scripts/script.js"></script>
     <title>Financial News</title>
   </head>
   <body>
@@ -21,7 +20,8 @@
                   width="20"
                   viewBox="0 0 99 168"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="margin-right: 10px">
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -35,36 +35,27 @@
             </li>
           </ul>
         </div>
-        <div class="menu-area">
-          <nav>
-            <ul class="header-menu" id="navChoose">
-              <li><a href="#">News</a></li>
-              <li><a href="#">SahamInfo</a></li>
-              <li><a href="#">Kalkulator</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header-button-area">
+        <nav class="menu-area">
           <ul>
-            <li>
-              <a href="#" class="dark-mode">
-                <img
-                  src="../images/icons/moon-stars-fill.svg"
-                  alt=""
-                  width="24px" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="javascript:void(0);"
-                class="menu-toggle"
-                onclick="myFunction()">
-                <i class="fa fa-bars" style="font-size: 24px"></i>
-              </a>
-            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">SahamInfo</a></li>
+            <li><a href="#">Kalkulator</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
+        </nav>
+        <div class="header-button-area">
+          <div class="mode">
+            <a href="#" class="dark-mode">
+              <img
+                src="../images/icons/moon-stars-fill.svg"
+                alt=""
+                width="24px" />
+            </a>
+          </div>
+          <div id="nav-list-button" class="nav-list-button">
+            <i class="fa fa-bars" style="font-size: 24px"></i>
+          </div>
         </div>
       </div>
     </header>
@@ -224,10 +215,57 @@
                   </div>
                 </article>
               </a>
+              <a hrel="#" class="card-news" style="order: 7">
+                <article class="card-exterior">
+                  <div class="container-card-news">
+                    <div class="header-card-news">
+                      <span class="date-news">24 Maret 2024</span>
+                    </div>
+                    <div class="preview-card-news">
+                      <picture class="picture-news">
+                        <img
+                          src="../images/headline news/headline apple.jpeg"
+                          role="presentation"
+                          loading="lazy"
+                          class="image-news" />
+                      </picture>
+                    </div>
+                    <div
+                      class="apply-overflow-tooltip headline-card-news"
+                      data-overflow-tooltip-text="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a hrel="#" class="card-news" style="order: 8">
+                <article class="card-exterior">
+                  <div class="container-card-news">
+                    <div class="header-card-news">
+                      <span class="date-news">24 Maret 2024</span>
+                    </div>
+                    <div class="preview-card-news">
+                      <picture class="picture-news">
+                        <img
+                          src="../images/headline news/headline apple.jpeg"
+                          role="presentation"
+                          loading="lazy"
+                          class="image-news" />
+                      </picture>
+                    </div>
+                    <div
+                      class="apply-overflow-tooltip headline-card-news"
+                      data-overflow-tooltip-text="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </article>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <script type="text/javascript" src="../Scripts/script.js"></script>
   </body>
 </html>

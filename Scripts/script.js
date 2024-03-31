@@ -1,7 +1,8 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const menuArea = document.querySelector(".menu-area");
+// ================ RESPONSIVE NAVBAR ================ //
+const menuButton = document.querySelector(".nav-list-button");
+const menuList = document.querySelector(".menu-area");
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("menu-toggle-show");
-  menuArea.classList.toggle("menu-area-show");
+menuButton.addEventListener("click", () => {
+  menuList.classList.toggle("active");
 });
+// ================ RESPONSIVE NAVBAR ================ //

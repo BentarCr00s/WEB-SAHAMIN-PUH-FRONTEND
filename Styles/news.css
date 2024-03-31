@@ -8,9 +8,15 @@ body {
 
 header {
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #ffffff 2rem, #ffffff00);
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0%;
 }
 header ul,
 header li a {
@@ -20,7 +26,6 @@ header li a {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  padding: 0 1vh 0 1vh;
 }
 .header-container {
   width: 100%;
@@ -30,22 +35,21 @@ header li a {
   /* border: 1px solid; */
   padding: 0 4vh 0 4vh;
 }
-.header-logo-area svg {
-  margin-right: 10px;
-}
-.header-menu {
+.header-logo-area {
   display: flex;
-  /* border: 1px solid; */
 }
-.header-menu li {
+.menu-area {
+  display: flex;
+}
+.menu-area li {
   margin: 4px 16px 4px 16px;
 }
-.header-menu li a {
+.menu-area li a {
   color: #333;
   font-weight: bold;
   padding: 10px;
 }
-.header-menu > li > a:hover {
+.menu-area ul > li > a:hover {
   background-color: #ddf3f0;
   /* color: #fff; */
   border-radius: 20px;
@@ -57,17 +61,40 @@ header li a {
 .header-button-area {
   display: flex;
 }
-a.menu-toggle {
+.nav-list-button {
   display: none;
+  padding-left: 2vh;
 }
-/* Responsive navbar */
-@media (max-width: 132vh) {
-  .header-menu {
+@media only screen and (max-width: 132vh) {
+  .menu-area {
     display: none;
   }
-  a.menu-toggle {
-    float: none;
+  .menu-area.active {
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.1s;
+    justify-content: center;
+  }
+  @media (max-width: 104vh) {
+    .menu-area ul {
+      display: block;
+      width: fit-content;
+      transition: 0.5s;
+    }
+  }
+  .nav-list-button {
     display: block;
+    cursor: pointer;
+  }
+  .menu-area ul li a {
+    justify-content: center;
+    margin: 2vh 2vh;
   }
 }
 main {
@@ -114,7 +141,6 @@ main.darken {
 .top-stories {
   display: grid;
   grid-auto-rows: min-content;
-  position: relative;
   margin-bottom: 48px;
 }
 .top-stories > * {
@@ -171,7 +197,6 @@ main.darken {
   background-color: initial;
   outline: none;
   overflow: visible;
-  position: relative;
   cursor: pointer;
   user-select: none;
 }
@@ -218,7 +243,7 @@ main.darken {
   position: relative;
 }
 .preview-card-news::before {
-  background: #f0f3fa;
+  background: #004af7;
   content: "";
   height: calc(100% - 2px);
   position: absolute;
@@ -244,7 +269,7 @@ main.darken {
   border: none;
 }
 .preview-card-news::after {
-  border: 1px solid #6a6d7833;
+  border: 1px solid #ff000033;
   border-radius: 8px;
   content: "";
   height: calc(100% - 2px);
