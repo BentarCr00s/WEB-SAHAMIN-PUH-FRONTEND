@@ -8,13 +8,18 @@ body{
 
 /* styling header landing page */
 header{
+    display: flex;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     background-color: transparent;
-    z-index: 1000;
+    z-index: 999;
     transition: background-color 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
 }
 .header-backdrop{
     width: 100%;
@@ -77,6 +82,7 @@ header{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
 
 /* ================== MAIN LANDING PAGE =============================== */
 
@@ -231,6 +237,7 @@ main.darken{
 }
 .timeframes>button:hover{
     background-color: #ddf3f0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -259,6 +266,7 @@ main.darken{
 }
 .timeframes>button:focus{
     background-color: #ddf3f0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -268,6 +276,7 @@ main.darken{
 }
 #chart-area:hover{
     background-color: #ddf3f0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -276,6 +285,7 @@ main.darken{
 }
 .btn-chart-type>span:focus{
     background-color: #ddf3f0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -285,6 +295,7 @@ main.darken{
 }
 #chart-candle:hover{
     background-color: #ddf3f0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    /* background-image: url(../images/bg/bg3\ sahaminpuh.png); */
+    /* background-size: 100% 100%; */
+    }
+    
+    header {
+    display: flex;
+    background: linear-gradient(180deg, #ffffff 2rem, #ffffff00);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    }
+    header ul,
+    header li a {
+    display: flex;
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    }
+    .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid; */
+    padding: 0 4vh 0 4vh;
+    }
+    .header-logo-area {
+    display: flex;
+    }
+    .menu-area {
+    display: flex;
+    }
+    .menu-area li {
+    margin: 4px 16px 4px 16px;
+    }
+    .menu-area li a {
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    }
+    .menu-area ul > li > a:hover {
+    background-color: #ddf3f0;
+    /* color: #fff; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    }
+    .header-button-area {
+    display: flex;
+    }
+    .nav-list-button {
+    display: none;
+    padding-left: 2vh;
+    }
+    @media only screen and (max-width: 132vh) {
+    .menu-area {
+        display: none;
+    }
+    .menu-area.active {
+        display: flex;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgb(230, 230, 230);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: 0.1s;
+        justify-content: center;
+    }
+    @media (max-width: 104vh) {
+        .menu-area ul {
+        display: block;
+        width: fit-content;
+        transition: 0.5s;
+        }
+    }
+    .nav-list-button {
+        display: block;
+        cursor: pointer;
+    }
+    .menu-area ul li a {
+        justify-content: center;
+        margin: 2vh 2vh;
+    }
+    }
+
+    /* ========================== MAIN KALKULATOR ========================= */
+    main {
+        width: 100%;
+        margin-top: 13vh;
+    }
+    
+    .kalkulator-container {
+        width: 86%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .container{
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+    }
+    @media only screen and (max-width: 132vh){
+        .container{
+            width: 90%;
+        }
+    }
+    .hitung-container{
+        text-align: left;
+    }
+    h1 {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    button {
+        padding: 10px 20px;
+        background-color: #006352;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #00432e;
+    }
+    .hasil-hitung {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    @media only screen and (max-width: 511px){
+        .hasil-hitung{
+            width: 90%;
+        }
+    }
+    
+    .hasil-hitung h3 {
+        /* margin-top: 20px; */
+        color: #333;
+        display: inline-block;
+        width: 50%;
+        margin-right: 10px; /* Sesuaikan dengan jarak yang diinginkan antara h3 dan span */
+    }
+    
+    .hasil-hitung span {
+        font-weight: bold;
+        color: #006352;
+        display: inline-block;
+        width: 40%;
+    }    
+    
+
+    /* ============================ FOOTER =================================== */
+
+    footer{
+        bottom: 0;
+        background-color: #f8f9fa; 
+        padding: 20px 0;
+        margin-top: 3vh;
+    }
+    .footer-container{
+        max-width: 86%; 
+        margin: 0 auto; 
+        /* display: flex; */
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .copyright-container{
+        margin: 10px 0;
+    }
+    .copyright-container p{
+        color: #464646;
+        margin: 0;
+        text-align: center;
+    }
+    

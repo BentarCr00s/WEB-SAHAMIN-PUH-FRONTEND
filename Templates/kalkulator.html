@@ -4,11 +4,12 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="../Styles/navbarTemplate.css" />
+<link rel="stylesheet" href="../Styles/kalkulator.css" />
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<title>Responsive Navbar using HTML & CSS</title>
+<title>KALKULATOR SAHAM</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <header>
@@ -60,6 +61,64 @@
     </div>
     </div>
 </header>
-<script type="text/javascript" src="../Scripts/navbarTemplate.js"></script>
+<main>
+    <div class="kalkulator-container">
+        <div class="container">
+            <h1>KALKULATOR SAHAM</h1>
+            <p>Hitung profit anda di sini.</p>
+            <div class="hitung-container">
+                <label for="buy">HARGA BELI</label><br>
+                <input type="text" id="buy" name="buy" pattern="[0-9]" required /><br />
+
+                <label for="sell">HARGA JUAL</label><br>
+                <input type="text" id="sell" name="sell" pattern="[0-9]" required /><br />
+
+                <label for="lot">LOT</label><br>
+                <input type="text" id="lot" name="lot" pattern="[0-9]" required /><br />
+
+                <label for="buyCommission">KOMISI BELI (%)</label><br>
+                <input
+                    type="text"
+                    id="buyCommission"
+                    name="buyCommission"
+                    pattern="[0-9][\.]"
+                    required
+                /><br />
+
+                <label for="sellCommission">KOMISI JUAL (%)</label><br>
+                <input
+                    type="text"
+                    id="sellCommission"
+                    name="sellCommission"
+                    pattern="[0-9][\.]"
+                    required
+                /><br />
+            </div>
+
+                <button id="result">HITUNG</button><br />
+            <div class="hasil-hitung">
+                <h3>Total Beli:</h3>
+                <span id="totBuy">0</span>
+                <h3>Total Jual:</h3>
+                <span id="totSell">0</span>
+                <h3>Total Untung/Rugi:</h3>
+                <span id="profitLoss">0</span>
+                <h3>Total Untung/Rugi (%):</h3>
+                <span id="profitLossPercent">0%</span>
+            </div>                
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="features-container">
+            <h3>Social Media</h3>
+        </div>
+        <div class="copyright-container">
+            <p>&copy 2024 SahamInpuh.</p>
+        </div>
+    </div>
+</footer>
+<script src="../Scripts/kalkulator.js"></script>
 </body>
 </html>
