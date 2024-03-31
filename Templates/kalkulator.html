@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR SAHAM</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>KALKULATOR SAHAM</h1>
+    <p>Hitung profit anda di sini.</p>
+    <label for="buy">HARGA BELI</label>
+    <input type="text" id="buy" name="buy" pattern="[0-9]" required /><br />
+
+    <label for="sell">HARGA JUAL</label>
+    <input type="text" id="sell" name="sell" pattern="[0-9]" required /><br />
+
+    <label for="lot">LOT</label>
+    <input type="text" id="lot" name="lot" pattern="[0-9]" required /><br />
+
+    <label for="buyCommission">KOMISI BELI (%)</label>
+    <input
+      type="text"
+      id="buyCommission"
+      name="buyCommission"
+      pattern="[0-9][\.]"
+      required
+    /><br />
+
+    <label for="sellCommission">KOMISI JUAL (%)</label>
+    <input
+      type="text"
+      id="sellCommission"
+      name="sellCommission"
+      pattern="[0-9][\.]"
+      required
+    /><br />
+
+    <button id="result">HITUNG</button><br />
+
+    <h3>Total Beli: <span id="totBuy">0</span></h3>
+    <h3>Total Jual: <span id="totSell">0</span></h3>
+    <h3>Total Untung/Rugi: <span id="profitLoss">0</span></h3>
+    <h3>Total Untung/Rugi (%): <span id="profitLossPercent">0%</span></h3>
+
+    <script src="../Scripts/kalkulator.js"></script>
+  </body>
+</html>
