@@ -466,6 +466,16 @@ main.darken{
     font-size: 14px;
     color: #333;
 }
+@media screen and (max-width: 529px){
+    .berita{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+    .news-img-container img{
+        height: 100%;
+    }
+}
 
 /* ======================= KALKULATOR LANDING PAGE ========================== */
 
