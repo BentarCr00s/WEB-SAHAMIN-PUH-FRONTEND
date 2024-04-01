@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SahaminPuh</title>
     <link rel="stylesheet" href="/Styles/landingPage.css">
-    <script type="text/javascript" src="../Scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <header id="main-header">
         <div class="header-backdrop">
             <div class="header-container">
                 <div class="header-logo-area">
-                    <a href="#" class="header-logo-link">
+                    <a href="landingPage.html" class="header-logo-link">
                         <!-- <span class="header-logo"> -->
                             <img src="../images/logo/Green Logo SahaminPuh.svg" alt="logo sahaminpuh">
                         <!-- </span> -->
@@ -24,17 +24,25 @@
                 <div class="header-middle-area">
                     <nav class="menu-area">
                         <ul class="header-menu">
-                            <li><a href="#">News</a></li>
+                            <li><a href="news.html">News</a></li>
                             <li><a href="#">SahamInfo</a></li>
-                            <li><a href="#">Kalkulator</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="kalkulator.html">Kalkulator</a></li>
+                            <li><a href="about.html">About</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="header-user-area">
-                    <a href="#" class="dark-mode">
-                        <img src="../images/icons/moon-stars-fill.svg" alt="">
-                    </a>
+                <div class="header-button-area">
+                    <div class="mode">
+                        <a href="#" class="dark-mode">
+                        <img
+                            src="../images/icons/moon-stars-fill.svg"
+                            alt=""
+                            width="24px" />
+                        </a>
+                    </div>
+                    <div id="nav-list-button" class="nav-list-button">
+                        <i class="fa fa-bars" style="font-size: 24px"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,12 +80,12 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">BBCA</span>
+                                            <a href="#"><span class="stock-name">BBCA</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
                                             <span class="mata-uang">IDR</span>
-                                            <span class="return"></span>
+                                            <span class="return">+6.53</span>
                                         </div>
                                     </div>
                                 </div>
@@ -89,7 +97,7 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">BBRI</span>
+                                            <a href="#"><span class="stock-name">BBRI</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
@@ -106,7 +114,7 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">ARTO</span>
+                                            <a href="#"><span class="stock-name">ARTO</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
@@ -123,7 +131,7 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">BMRI</span>
+                                            <a href="#"><span class="stock-name">BMRI</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
@@ -140,7 +148,7 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">ASII</span>
+                                            <a href="#"><span class="stock-name">ASII</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
@@ -157,7 +165,7 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">ADRO</span>
+                                            <a href="#"><span class="stock-name">ADRO</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
@@ -174,7 +182,7 @@
                                     </span>
                                     <div class="value">
                                         <div class="name">
-                                            <span class="stock-name">GOTO</span>
+                                            <a href="#"><span class="stock-name">GOTO</span></a>
                                         </div>
                                         <div class="harga">
                                             <span class="harga">14,975</span>
@@ -188,8 +196,12 @@
                     </div>
                     <div class="chart-container">
                         <div class="chart-stock">
-                            <div class="chart"></div>
-                            <div class="chart-price"></div>
+                            <div class="chart">
+                                <h1>CHART STOCK</h1>
+                            </div>
+                            <div class="chart-price">
+                                <h5>STOCK PRICE</h5>
+                            </div>
                         </div>
                         <div class="timeframe-stock">
                             <div class="timeframes">
@@ -354,49 +366,19 @@
                     </div>
                 </div>
                 <div class="kalkulator">
-                    <div class="margin-of-safety card-kalkulator">
+                    <div class="calculate-profit card-kalkulator">
                         <!-- preview feature -->
                         <div class="preview">
                             <img src="../images/bg/bg1 sahaminpuh.jpeg" alt="">
                         </div>
                         <!-- description feature -->
                         <div class="deskripsi">
-                            <a href="#"><h3>Margin of Safety</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae a, cum molestias autem sapiente eaque laudantium illum inventore iste, neque tempore libero quia et ipsa aliquam? Magni, commodi unde.</p>
+                            <a href="kalkulator.html"><h3>Hitung Profit</h3></a>
+                            <p>Fitur hitung profit dalam kalkulator rekomendasi saham membantu Anda memperkirakan keuntungan dari pembelian saham. Anda dapat memasukkan data pembelian dan penjualan saham, memilih jenis kalkulasi (sederhana atau dengan pajak dan inflasi), dan melihat perkiraan keuntungan, persentase keuntungan, dan perkiraan keuntungan per lot. Fitur ini bermanfaat untuk membuat keputusan investasi yang lebih terinformasi, membandingkan berbagai pilihan investasi, dan mengelola risiko investasi.</p>
                         </div>
                         <!-- CTA button -->
                         <div class="cta-btn">
-                            <button>Let's Try!</button>
-                        </div>
-                    </div>
-                    <div class="average-saham card-kalkulator">
-                        <!-- preview feature -->
-                        <div class="preview">
-                            <img src="../images/bg/bg1 sahaminpuh.jpeg" alt="">
-                        </div>
-                        <!-- description feature -->
-                        <div class="deskripsi">
-                            <a href="#"><h3>Harga Wajar Saham</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae a, cum molestias autem sapiente eaque laudantium illum inventore iste, neque tempore libero quia et ipsa aliquam? Magni, commodi unde.</p>
-                        </div>
-                        <!-- CTA button -->
-                        <div class="cta-btn">
-                            <button>Let's Try!</button>
-                        </div>
-                    </div>
-                    <div class="harga-wajar-saham card-kalkulator">
-                        <!-- preview feature -->
-                        <div class="preview">
-                            <img src="../images/bg/bg1 sahaminpuh.jpeg" alt="">
-                        </div>
-                        <!-- description feature -->
-                        <div class="deskripsi">
-                            <a href="#"><h3>Average Saham</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repudiandae a, cum molestias autem sapiente eaque laudantium illum inventore iste, neque tempore libero quia et ipsa aliquam? Magni, commodi unde.</p>
-                        </div>
-                        <!-- CTA button -->
-                        <div class="cta-btn">
-                            <button>Let's Try!</button>
+                            <a href="kalkulator.html"><button>Let's Try!</button></a>
                         </div>
                     </div>
                 </div>
@@ -413,5 +395,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="../Scripts/script.js"></script>
 </body>
 </html>
