@@ -177,11 +177,11 @@ main.darken{
 .main-page h1{
     text-align: center;
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 250%;
+    font-size: 220%;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(231, 231, 231, 0.637);
 }
@@ -201,19 +201,21 @@ main.darken{
   top: 40%;
 }
 
-.text-page{
-  display: flex;
-  gap: 50px;
+.about-page{
   width: 100%;
+  display: flex;
+}
+
+.text-page{
+  gap: 50px;
+  width: 60%;
 }
 
 .img-page{
-  display: flex;
-  flex-wrap: nowrap;
   width: 40%; 
   height: 40%;
+  padding-left: 20px;
 }
-
 
 footer{
   margin-top: 50px;
