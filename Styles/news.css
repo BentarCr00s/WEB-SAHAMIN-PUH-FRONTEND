@@ -144,7 +144,7 @@ main.darken {
 .top-stories > * {
   min-width: 0;
 }
-.wrapper-title-stories {
+.wrapper-title-stories, .wrapper-title-market{
   margin-bottom: 24px;
   align-items: center;
   display: flex;
@@ -155,7 +155,7 @@ main.darken {
   max-width: 100%;
   width: max-content;
 }
-.title-top-stories {
+.title-top-stories, .title-market{
   color: inherit;
   display: inline;
   scroll-margin-top: 129px;
@@ -169,27 +169,27 @@ main.darken {
   font-weight: 600;
 }
 @media (min-width: 64vh) {
-  .grid-top-stories {
+  .grid-news-content {
     display: grid;
     column-gap: 48px;
     row-gap: 32px;
-    --grid-column-count: 2;
+    --grid-column-count: 3;
     --grid-display-column-1: revert;
-    --grid-display-column-2: none;
+    --grid-display-column-2: revert;
     --grid-display-column-3: none;
     --grid-display-column-4: none;
     --grid-display-column-5: none;
     --grid-row-gap: 32px;
     --grid-col-gap: 48px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin: 0 -8px;
   }
 }
-.grid-top-stories > * {
+.grid-news-content > * {
   padding: 0;
   border-radius: 12px;
 }
-.card-news {
+.card-news, .card-market{
   display: inline-flex;
   text-decoration: none;
   background-color: initial;
@@ -197,8 +197,9 @@ main.darken {
   overflow: visible;
   cursor: pointer;
   user-select: none;
+  color: #131722;
 }
-.card-exterior {
+.card-exterior{
   border-radius: 16px;
   box-sizing: border-box;
   padding: 8px;
@@ -214,7 +215,7 @@ main.darken {
     "title preview";
   grid-template-columns: 1fr 72px;
 }
-.header-card-news {
+.header-card-news, .header-card-market {
   grid-area: header;
   line-height: 18px;
   font-size: 14px;
@@ -284,4 +285,43 @@ main.darken {
   font-style: normal;
   font-weight: 500;
   display: inline;
+}
+.market-news {
+  margin-bottom: 48px;
+}
+.container-market-news{
+  display: grid;
+  grid-auto-rows: min-content;
+}
+.container-market-news > * {
+  min-width: 0;
+}
+.container-tittle-market{
+  display: inline;
+  max-width: 100%;
+  width: max-content;
+  outline: none;
+  overflow: visible;
+  position: relative;
+}
+.container-tittle-market:visited{
+  fill: #131722;
+  color: #131722;
+}
+.title-market{
+  color: #131722;
+}
+.i-no-break{
+  white-space: nowrap;
+}
+.icon-arrow{
+  display: contents;
+}
+.icon-arrow>svg{
+  height: 1.1ex;
+  margin-inline-start: .15em;
+  vertical-align: middle;
+  width: auto;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
 }
