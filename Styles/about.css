@@ -212,9 +212,14 @@ main.darken{
 }
 
 .img-page{
-  width: 40%; 
+  width: 40%;
   height: 40%;
   padding-left: 20px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 
 footer{
