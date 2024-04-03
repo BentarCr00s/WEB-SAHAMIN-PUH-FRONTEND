@@ -3,13 +3,6 @@ body {
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.container-ribbon-saham {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
 
 /* styling header landing page */
 header {
@@ -154,6 +147,15 @@ header li a {
     margin: 2vh 2vh;
   }
 }
+
+/* ==================== KONTEN SAHAMINFO =================== */
+.container-ribbon-saham {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
 .container {
   display: flex;
   align-items: center;
@@ -162,10 +164,61 @@ header li a {
 }
 
 .container-saham {
-  margin-top: 50px;
-  width: 80vw;
-  height: 80vh;
+  margin-top: 40px;
+  width: 86%;
+  height: 80.6vh;
+  margin-bottom: 20px;
 }
+.tweeter-sentiment{
+  width: 86%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.sentiment-container {
+  display: flex;
+}
+
+.tweeter-sentiment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: #333;
+  border-style: dashed;
+  border-width: 1px; */
+  width: 50%;
+}
+.container-technical{
+  width: 86%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.container-technical-content {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+@media screen and (max-width: 768px){
+  .sentiment-container{
+    display: block;
+  }
+  .tweeter-sentiment-container{
+    width: 100%;
+  }
+  .container-technical-content{
+    display: block;
+  }
+  .tradingview-widget-container{
+    margin: 0 auto 10px;
+  }
+}
+/* @media screen and(max-width: 1000px){
+  .container-technical{
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */
 
 /* ===================== FOOTER ============================ */
 
@@ -189,23 +242,4 @@ footer {
   color: #464646;
   margin: 0;
   text-align: center;
-}
-
-.sentiment-container {
-  display: flex;
-}
-
-.tweeter-sentiment-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* border: #333;
-  border-style: dashed;
-  border-width: 1px; */
-  width: 50%;
-}
-
-.container-technical {
-  display: flex;
 }
