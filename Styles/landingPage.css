@@ -273,7 +273,7 @@ main.darken {
   color: rgb(0, 182, 0);
 }
 .chart-container {
-  height: 30em;
+  height: 70vh;
   width: 100%;
   display: block;
 }
